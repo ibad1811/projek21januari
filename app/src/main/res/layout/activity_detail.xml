@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman Detail Film"
+        android:fontFamily="sans-serif-black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/filmDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BILA ESOK IBU TIADA ( R13+)"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="337dp"
+        android:layout_height="354dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/bila_esok_ibu_tiada" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bila Esok Ibu Tiada adalah film drama keluarga Indonesia yang menceritakan tentang seorang ibu yang membesarkan anak-anaknya setelah kehilangan suami. Film ini tayang di bioskop pada 14 November 2024.
+Bila Esok Ibu Tiada mengisahkan tentang Rahmi (Christine Hakim) yang harus membesarkan keempat anaknya sendirian setelah kehilangan suaminya. Rahmi harus menghadapi berbagai tantangan, seperti masalah ekonomi dan konflik dengan anak-anaknya."
+        android:textStyle="italic" />
+
+</LinearLayout>

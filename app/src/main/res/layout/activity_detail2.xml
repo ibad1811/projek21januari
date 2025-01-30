@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".SecondActivity2">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Halaman Detail Film"
+        android:fontFamily="sans-serif-black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/filmDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SEKAWAN LIMO ( R13+)"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="337dp"
+        android:layout_height="354dp"
+        android:layout_gravity="center"
+        app:srcCompat="@drawable/sekawan_limo" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sekawan Limo adalah film komedi horor Indonesia yang disutradarai oleh Bayu Skak dan dirilis pada 4 Juli 2024. Film ini mengisahkan tentang lima pendaki yang mengalami serangkaian peristiwa mistis saat mendaki Gunung Madyopuro. Film ini berhasil menarik perhatian penonton dan meraih lebih dari 2,2 juta penonton dalam tiga minggu penayangannya di bioskop. ANTARANEWS.COM
+ Mulai 14 November 2024,FILM Sekawan Limo tersedia untuk ditonton di platform Netflix."
+        android:textStyle="italic" />
+
+</LinearLayout>

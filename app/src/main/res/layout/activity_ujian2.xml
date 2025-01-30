@@ -1,0 +1,125 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <!-- Bagian Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/gradasi_warna">
+
+        <!-- Foto Profil -->
+
+        <ImageView
+            android:id="@+id/foto_profil"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/background_lingkaran"
+            android:contentDescription="Foto Profil"
+            android:src="@drawable/hatta"
+            android:scaleType="centerCrop"/>
+
+        <!-- Nama Pengguna dan Status -->
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/kontak2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hatta"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/status2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="aktif 20 menit lalu"
+                android:textSize="12sp"
+                android:textColor="@android:color/darker_gray" />
+        </LinearLayout>
+
+        <!-- Ikon Telepon -->
+        <ImageView
+            android:id="@+id/phone_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/call"
+            android:contentDescription="Telepon"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Ikon Video Call -->
+        <ImageView
+            android:id="@+id/video_call_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/videocall"
+            android:contentDescription="Video Call" />
+    </LinearLayout>
+
+    <!-- RecyclerView untuk chat messages -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_chat"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/background"
+        android:padding="8dp"
+        android:scrollbars="vertical" />
+
+    <!-- Container untuk input pesan -->
+
+
+    <LinearLayout
+        android:id="@+id/message_input_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="@color/background"
+        android:padding="8dp">
+
+
+        <!-- Input Pesan -->
+        <EditText
+            android:id="@+id/inputTeks2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Ketik pesan..."
+            android:background="@drawable/border"
+            android:padding="12dp"
+            android:textColor="@android:color/black"
+            android:textColorHint ="@color/gray"
+            />
+
+        <!-- Tombol Kirim -->
+        <ImageButton
+            android:id="@+id/btnsend2"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/kirim"
+            android:background="@drawable/background_lingkaran"
+            android:contentDescription="Kirim pesan"
+            android:layout_marginStart="8dp"
+            android:padding="10dp"
+            android:scaleType="centerInside"/>
+    </LinearLayout>
+
+
+</LinearLayout>
+

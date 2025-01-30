@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    android:backgroundTint="#373A3A"
+    android:backgroundTintMode="multiply"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="94dp"
+        android:background="#5E0595"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center"
+        android:text="@string/film_layar_lebar_indonesia"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:backgroundTint="#615C5C">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="168dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/bila_esok_ibu_tiada"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/movieTitleDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="17dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="BILA ESOK IBU TIADA(R13+)"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/detailButton"
+            android:layout_width="143dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="110dp"
+            android:layout_marginLeft="-180dp"
+            android:text="@string/detail"
+            app:icon="@android:drawable/ic_search_category_default"
+            tools:ignore="RtlHardcoded" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="204dp"
+        android:backgroundTint="#615C5C">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="167dp"
+            android:layout_height="200dp"
+            app:srcCompat="@drawable/sekawan_limo"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:id="@+id/movieTitleDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="17dp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="serif-monospace"
+            android:text="SEKAWAN LIMO(R13+)"
+            android:textColor="#FFFFFF"
+            android:textSize="24dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/detailButton2"
+            android:layout_width="143dp"
+            android:layout_height="60dp"
+            android:layout_marginVertical="110dp"
+            android:layout_marginLeft="-180dp"
+            android:text="@string/detail"
+            app:icon="@android:drawable/ic_search_category_default"
+            tools:ignore="RtlHardcoded" />
+
+    </LinearLayout>
+
+</LinearLayout>
